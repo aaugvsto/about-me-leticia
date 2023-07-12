@@ -2,11 +2,13 @@ const init = require('./data/db')
 const express = require('express');
 const Certificado = require('./models/certificado')
 const server = express();
-
+const buildCors = require('./cors/cors')
 
 const isInitDatabase = init();
 
-if (isInitDatabase) server.listen(5002)
+if (isInitDatabase) server.listen(5002);
+
+buildCors(server);
 
 server.use(
     express.urlencoded({
