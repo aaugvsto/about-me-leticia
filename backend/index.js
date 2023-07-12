@@ -38,7 +38,7 @@ server.post('/certificado', async (req, res) => {
     if (!descricao)
         res.status(404).json({ message: 'A descricao do certificado é obrigatória' })
 
-    const certificado = { nome, link }
+    const certificado = { nome, descricao, link }
 
     try {
         await Certificado.create(certificado);
