@@ -27,13 +27,16 @@ server.get('/', (req, res) => {
 
 server.post('/certificado', async (req, res) => {
 
-    const { nome, link } = req.body;
+    const { nome, link, descricao } = req.body;
 
     if (!nome)
         res.status(404).json({ message: 'Nome do certificado é obrigatório' })
 
     if (!link)
         res.status(404).json({ message: 'Link para o certificado é obrigatório' })
+
+    if (!descricao)
+        res.status(404).json({ message: 'A descricao do certificado é obrigatória' })
 
     const certificado = { nome, link }
 
@@ -42,7 +45,7 @@ server.post('/certificado', async (req, res) => {
         res.status(201).json({ message: 'Certificado cadastrado com sucesso!' })
     }
     catch (error) {
-        res.status(500).json({ error: error })
+        res.status(500).json({ message: error })
     }
 
 });
@@ -54,7 +57,7 @@ server.get('/certificado', async (req, res) => {
         res.status(200).json(certificados)
     }
     catch (error) {
-        res.status(500).json({ error: error })
+        res.status(500).json({ message: error })
     }
 
 });
