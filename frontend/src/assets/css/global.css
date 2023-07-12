@@ -30,3 +30,7 @@ body {
 .loading-primary {
     color: #EECBC9;
 }
+
+.mix-blend-mode {
+    mix-blend-mode: multiply;
+}
