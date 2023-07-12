@@ -1,0 +1,13 @@
+<app-loading *ngIf="loading"></app-loading>
+<div class="container mt-5">
+    <div *ngIf="!loading">
+        <div *ngFor="let item of certificados">
+            <app-certificado-card 
+            title = {{item.nome}}
+            description = {{item.descricao}}
+            link = {{item.link}}
+
+            ></app-certificado-card>
+        </div>
+    </div>
+</div>

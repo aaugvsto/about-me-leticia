@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat:wght@300&display=swap');
+
+* {
+    font-family: 'Belanosima', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.bg-primary {
+    background-color: #EECBC9 !important;
+}
+
+.btn-primary {
+    background-color: #EECBC9 !important;
+    border-color: #EECBC9 !important;
+}
+
+.btn-light {
+    background-color: white !important;
+    border-color: white !important;
+}
+
+.btn-light:hover {
+    background-color: white !important;
+    border-color: white !important;
+}
+
+.loading-primary {
+    color: #EECBC9;
+}
