@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
 
+  public isCollapsed = false;
+
+  setIscollapsed() {
+    this.isCollapsed = !this.isCollapsed;
+  }
+
 }

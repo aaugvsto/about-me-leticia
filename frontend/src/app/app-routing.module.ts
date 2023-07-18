@@ -9,10 +9,16 @@ const routes: Routes = [
     path: '',
     component: FramePageComponent,
     children: [
-      { path: '', component: SobreMimComponent },
-      { path: 'certificados', component: CertificadosPageComponent }
+      { path: '', component: SobreMimComponent },     
     ]
-  }
+  },
+  {
+    path: 'certificados',
+    component: FramePageComponent,
+    children: [
+      { path: '', component: CertificadosPageComponent },     
+    ]
+  },
 ];
 
 @NgModule({
