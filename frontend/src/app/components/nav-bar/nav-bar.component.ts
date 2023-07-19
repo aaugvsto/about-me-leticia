@@ -4,12 +4,4 @@ import { Component } from '@angular/core';
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html'
 })
-export class NavBarComponent {
-
-  public isCollapsed = false;
-
-  setIscollapsed() {
-    this.isCollapsed = !this.isCollapsed;
-  }
-
-}
+export class NavBarComponent { }
