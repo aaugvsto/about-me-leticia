@@ -1,11 +1,11 @@
 <div class="container-fluid d-flex justify-content-center">
-    <div class="p-5">
-        <div id="about" class="mt-2">
+    <div class="p-4">
+        <div id="about">
             <div id="cabecalho">
                 <h1>Leticia Bartolini Gomes</h1>
                 <p>Estudante de medicina veterinaria - 4º Período - UNA Contagem</p>
             </div>
-            <div id="especialidades" class="mt-3">
+            <div id="especialidades">
                 <p>Interesses:</p>
             <ul>
                 <li>Estágio em clínica veterinária de pequeno animais</li>
@@ -19,8 +19,8 @@
             </div>
             <div id="contatos" class="mb-5">
                 <p>Contatos ✨</p>
-            <button class="btn btn-success"><i class="bi bi-whatsapp"></i> (31)99999-9999</button>
-            <button class="ml-3 btn btn-danger"><i class="bi bi-envelope-at"></i> let@gmail.com</button>
+            <a class="btn btn-success" href="https://wa.me/553198730295" target="_blank"><i class="bi bi-whatsapp"></i> (31) 99873-0295</a>
+            <input type="button" class="ml-3 btn btn-danger" (click)="copiarEmail()" ngxClipboard cbContent="leticiabartolinig@gmail.com" value="leticiabartolinig@gmail.com" />
             </div>
         </div>
     </div>

@@ -11,6 +11,9 @@ import { CertificadosPageComponent } from './pages/certificados-page/certificado
 import { HttpClientModule } from '@angular/common/http';
 import { CertificadoCardComponent } from './components/certificado-card/certificado-card.component';
 import { LoadingComponent } from './components/loading/loading.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ToastrModule } from 'ngx-toastr';
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,14 @@ import { LoadingComponent } from './components/loading/loading.component';
     CertificadosPageComponent,
     CertificadoCardComponent,
     LoadingComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot(),
+    ClipboardModule
   ],
   providers: [Service],
   bootstrap: [AppComponent]

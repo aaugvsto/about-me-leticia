@@ -1,1 +1,18 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* A cor de fundo que você deseja para o rodapé *//* Adapte o padding conforme necessário */
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.bg-light {
+    background-color: rgb(255, 235, 238) !important
+}

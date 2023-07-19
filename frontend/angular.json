@@ -27,7 +27,8 @@
             "styles": [
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/global.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "src/assets/js/bootstrap.min.js"
