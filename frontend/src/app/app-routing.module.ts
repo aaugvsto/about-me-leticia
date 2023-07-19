@@ -14,7 +14,10 @@ const routes: Routes = [
   },
   {
     path: 'certificados',
-    component: CertificadosPageComponent,
+    component: FramePageComponent,
+    children: [
+      { path: '', component: CertificadosPageComponent },     
+    ]
   },
 ];
 
