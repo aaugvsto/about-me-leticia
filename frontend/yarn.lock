@@ -180,9 +180,9 @@
     tslib "^2.3.0"
 
 "@angular/core@^16.1.0":
-  version "16.1.4"
-  resolved "https://registry.npmjs.org/@angular/core/-/core-16.1.4.tgz"
-  integrity sha512-eWs++peAp+Lm2SHGfMsHAye2IOmlDKkVJ4dFf4TaZXW+AEev3FXKXLFp+dBUq8YkCKly7iAV26NXEUBOFFtplQ==
+  version "16.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-16.1.6.tgz#9ed2b412e0c1be696e39cedcad2487063048ab78"
+  integrity sha512-tUXvVLc+Vbl8Se7hajwyUTNmKD9uPq+SZH6x8sRM2n5azzjBZltOoJfzxK5JKAkiFf/KkQhteHkMBfoDLZ2tmw==
   dependencies:
     tslib "^2.3.0"
 
