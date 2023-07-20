@@ -1,3 +1,5 @@
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CertificadosPageComponent } from './pages/certificados-page/certificados-page.component';
@@ -19,6 +21,14 @@ const routes: Routes = [
       { path: '', component: CertificadosPageComponent },     
     ]
   },
+  {
+    path: 'login',
+    component: LoginPageComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  }
 ];
 
 @NgModule({

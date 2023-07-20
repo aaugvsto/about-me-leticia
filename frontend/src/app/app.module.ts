@@ -14,6 +14,11 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ToastrModule } from 'ngx-toastr';
 import { ClipboardModule } from 'ngx-clipboard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { TableCertificadosComponent } from './components/table-certificados/table-certificados.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +30,18 @@ import { ClipboardModule } from 'ngx-clipboard';
     CertificadoCardComponent,
     LoadingComponent,
     FooterComponent,
+    LoginPageComponent,
+    DashboardComponent,
+    TableCertificadosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    ClipboardModule
+    ClipboardModule,
+    ReactiveFormsModule
   ],
   providers: [Service],
   bootstrap: [AppComponent]

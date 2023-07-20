@@ -1,0 +1,35 @@
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card" style="width: 30rem;">
+        <div class="card-header">
+            <h5>Login</h5>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-center mb-4">
+                <img src="../../../assets/images/logo.png" alt="logo" width="150px">
+            </div>
+            <form [formGroup]="form">
+                <div class="form-group">
+                    <input type="text" 
+                    formControlName="username" 
+                    class="form-control" 
+                    placeholder="Username"
+                    >
+                </div>
+                <div class="form-group">
+                    <input 
+                    type="password" 
+                    formControlName="password" 
+                    class="form-control" 
+                    placeholder="Senha"
+                    >
+                </div>
+                <input 
+                class="btn btn-info form-control" 
+                type="submit" 
+                value="Entrar" 
+                routerLink="/dashboard"
+                >
+            </form>
+        </div>
+    </div>
+</div>
